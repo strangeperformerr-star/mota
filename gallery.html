@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Memories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            padding: 2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card p {
+            padding: 1rem;
+            text-align: center;
+            color: #4a5568;
+            font-size: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 1rem auto;
+            text-align: center;
+            background: #ff6b6b;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: #e53e3e;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="main.html" class="back-btn">Back to Home</a>
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">Birthday Memories</h1>
+    <div class="gallery">
+        <div class="card">
+            <img src="sonu1.jpeg" alt="Memory 1">
+            <p>Moment 1: A special day!</p>
+        </div>
+        <div class="card">
+            <img src="sonu2.jpeg" alt="Memory 2">
+            <p>Moment 2: Cute Bacha !</p>
+        </div>
+        <div class="card">
+            <img src="sonu5.jpeg" alt="Memory 3">
+            <p>Moment 3: Joyful times!</p>
+        </div>
+        <div class="card">
+            <img src="sonu4.jpeg" alt="Memory 4">
+            <p>Moment 4: Masti !</p>
+        </div>
+    </div>
+</body>
+</html>
